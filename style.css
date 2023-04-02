@@ -137,6 +137,9 @@
     line-height: 60px;
     color: #21243D;
 }
+.work_link {
+    text-decoration: none;
+}
 .project_cover {
     width: 246px;
     height: 180px;
