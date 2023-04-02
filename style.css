@@ -32,8 +32,10 @@
 }
 /* portfolio */
 .portfolio_main {
-    padding: 0 12.8%;
     margin-top: 100px;
+}
+.container {
+    padding: 0 12.8%;
 }
 .hero_section {
     border-top: 34px solid #C4C4C4;
@@ -69,6 +71,27 @@
     width: 208px;
     margin-bottom: 70px;
     cursor: pointer;
+}
+.posts_section {
+    background-color: #EDF7FA;
+}
+.posts_block {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+.post {
+    padding: 24px 22px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+    border-radius: 4px;
+    max-width: 48%;
+}
+.post_title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 38px;
+    color: #21243D;
 }
 /* blog */
 .blog_main {
@@ -308,5 +331,17 @@
     }
     .modal {
         font-weight: 20;
+    }
+    .posts_block {
+        display: flex;
+        flex-direction: column;
+    }
+    .post {
+        max-width: 100%;
+        margin-bottom: 16px;
+    }
+    .post_title {
+        font-size: 22px;
+        line-height: 30px;
     }
 }
