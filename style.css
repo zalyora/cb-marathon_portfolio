@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+body {
+    position: relative;
+}
 
 /*Header*/
 .navigation_menu {
@@ -66,7 +69,9 @@
     border: none;
     outline-color: #FF6464;
     color: #FFFFFF;
-    padding: 14px 20px;
+    line-height: 0.7;
+    font-size: 20px;
+    padding: 18px 20px;
     border-radius: 2px;
     width: 208px;
     margin-bottom: 70px;
@@ -252,6 +257,85 @@
     border: none;
     background-image: url(./assets/menu-icon.svg);
     background-color: transparent;
+}
+.modal_bg {
+    animation: appear 3s linear 0.1s forwards;
+    background-color: #C4C4C4;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    padding-top: 150px;
+    display: none;
+}
+.modal_window {
+    position: sticky;
+    top: 200px;
+    left: 35%;
+    width: 500px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    padding: 30px;
+    background-color:#FFFFFF;
+    border-radius: 2px;
+    box-shadow: 10px 10px 28px #21243D;
+}
+.close {
+    border: none;
+    background-color: #8695A4;
+    border-radius: 4px;
+    font-size: 20px;
+    line-height: 1;
+    padding: 6px 8px;
+    color: #21243D;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+label {
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#name,
+#email {
+    font-family: inherit;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    border: 2px solid #21243D;
+    border-radius: 2px;
+}
+.button {
+    background-color: #FF6464;
+    border: none;
+    outline-color: #FF6464;
+    color: #FFFFFF;
+    padding: 18px 24px;
+    border-radius: 2px;
+    line-height: 0.7;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.8;
+    }
 }
 
 @media screen and (max-width:768px) {

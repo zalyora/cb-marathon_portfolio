@@ -16,7 +16,7 @@
             <button class="burger"></button>
             <a class="menu_item" href="featured-works.html">Works</a>
             <a class="menu_item" href="blog.html">Blog</a>
-            <a class="menu_item" href="#">Contact</a>
+            <a class="menu_item" href="#" id="contact">Contact</a>
         </nav>
     </header>
     <main class="portfolio_main">
@@ -101,5 +101,15 @@
             <div class="copyright">Copyright ©2020 All rights reserved</div>
         </div>
     </footer>
+    <form class="modal_bg" id="modal">
+        <div class="modal_window">
+            <button class="close">x</button>
+            <label for="input">Send me a note:</label>
+            <input id="name" type="text" placeholder="Your name">
+            <input type="email" id="email" placeholder="Your email">
+            <button id="submit" class="button" type="submit">submit</button>
+        </div>
+    </form>
+    <script src="./script.js"></script>
 </body>
 </html>
